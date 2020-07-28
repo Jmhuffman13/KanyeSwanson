@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using Newtonsoft.Json.Linq;
 
 namespace KanyeSwanson
 {
@@ -7,7 +8,9 @@ namespace KanyeSwanson
     {
         static void Main(string[] args)
         {
-            var client = new HttpClient();
+            RandomQuote.KanyeQuote();
+
+            RandomQuote.SwansonQuote();
         }
     }
 }
